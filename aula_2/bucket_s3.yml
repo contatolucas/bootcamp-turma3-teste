@@ -1,0 +1,14 @@
+# Template CloudFormation
+
+Description: cria um bucket S3
+
+Resources:
+
+  MeuBucketBootCampTeste:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: contatolucas-bootcamp-com-integracao-continua
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
